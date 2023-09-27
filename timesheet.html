@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timesheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="timesheet-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <div class="day-container">
+                <label for="monday-start">Monday Start Time:</label>
+                <input type="time" id="monday-start" name="monday-start">
+
+                <label for="monday-break-hours">Break Hours:</label>
+                <input type="number" id="monday-break-hours" name="monday-break-hours" min="0" placeholder="0" >
+
+                <label for="monday-break-minutes">Break Minutes:</label>
+                <input type="number" id="monday-break-minutes" name="monday-break-minutes" min="0" max="59" placeholder="0" >
+
+                <label for="monday-finish">Monday Finish Time:</label>
+                <input type="time" id="monday-finish" name="monday-finish" >
+            </div>
+<!-- Tuesday -->
+          <div class="day-container">
+    <label for="tuesday-start">Tuesday Start Time:</label>
+    <input type="time" id="tuesday-start" name="tuesday-start" >
+
+    <label for="tuesday-break-hours">Break Hours:</label>
+    <input type="number" id="tuesday-break-hours" name="tuesday-break-hours" min="0" placeholder="0" >
+
+    <label for="tuesday-break-minutes">Break Minutes:</label>
+    <input type="number" id="tuesday-break-minutes" name="tuesday-break-minutes" min="0" max="59" placeholder="0" >
+
+    <label for="tuesday-finish">Tuesday Finish Time:</label>
+    <input type="time" id="tuesday-finish" name="tuesday-finish" >
+</div>
+<!-- Wednesday -->
+<div class="day-container">
+    <label for="wednesday-start">Wednesday Start Time:</label>
+    <input type="time" id="wednesday-start" name="wednesday-start" >
+
+    <label for="wednesday-break-hours">Break Hours:</label>
+    <input type="number" id="wednesday-break-hours" name="wednesday-break-hours" min="0" placeholder="0" >
+
+    <label for="wednesday-break-minutes">Break Minutes:</label>
+    <input type="number" id="wednesday-break-minutes" name="wednesday-break-minutes" min="0" max="59" placeholder="0" >
+
+    <label for="wednesday-finish">Wednesday Finish Time:</label>
+    <input type="time" id="wednesday-finish" name="wednesday-finish" >
+</div>
+
+<!-- Thursday -->
+          
+<div class="day-container">
+    <label for="thursday-start">Thursday Start Time:</label>
+    <input type="time" id="thursday-start" name="thursday-start" >
+
+    <label for="thursday-break-hours">Break Hours:</label>
+    <input type="number" id="thursday-break-hours" name="thursday-break-hours" min="0" placeholder="0" >
+
+    <label for="thursday-break-minutes">Break Minutes:</label>
+    <input type="number" id="thursday-break-minutes" name="thursday-break-minutes" min="0" max="59" placeholder="0" >
+
+    <label for="thursday-finish">Thursday Finish Time:</label>
+    <input type="time" id="thursday-finish" name="thursday-finish" >
+</div>
+          
+<!-- Friday -->
+        
+<div class="day-container">
+    <label for="friday-start">Friday Start Time:</label>
+    <input type="time" id="friday-start" name="friday-start" >
+
+    <label for="friday-break-hours">Break Hours:</label>
+    <input type="number" id="friday-break-hours" name="friday-break-hours" min="0" placeholder="0" >
+
+    <label for="friday-break-minutes">Break Minutes:</label>
+    <input type="number" id="friday-break-minutes" name="friday-break-minutes" min="0" max="59" placeholder="0" >
+
+    <label for="friday-finish">Friday Finish Time:</label>
+    <input type="time" id="friday-finish" name="friday-finish" >
+</div>
+          
+<!-- Saturday -->
+
+<div class="day-container">
+    <label for="saturday-start">Saturday Start Time:</label>
+    <input type="time" id="saturday-start" name="saturday-start" >
+
+    <label for="saturday-break-hours">Break Hours:</label>
+    <input type="number" id="saturday-break-hours" name="saturday-break-hours" min="0" placeholder="0" >
+
+    <label for="saturday-break-minutes">Break Minutes:</label>
+    <input type="number" id="saturday-break-minutes" name="saturday-break-minutes" min="0" max="59" placeholder="0" >
+
+    <label for="saturday-finish">Saturday Finish Time:</label>
+    <input type="time" id="saturday-finish" name="saturday-finish" >
+</div>
+
+          <!-- Sunday -->
+          
+<div class="day-container">
+    <label for="sunday-start">Sunday Start Time:</label>
+    <input type="time" id="sunday-start" name="sunday-start" >
+
+    <label for="sunday-break-hours">Break Hours:</label>
+    <input type="number" id="sunday-break-hours" name="sunday-break-hours" min="0" placeholder="0" >
+
+    <label for="sunday-break-minutes">Break Minutes:</label>
+    <input type="number" id="sunday-break-minutes" name="sunday-break-minutes" min="0" max="59" placeholder="0" >
+
+    <label for="sunday-finish">Sunday Finish Time:</label>
+    <input type="time" id="sunday-finish" name="sunday-finish" >
+</div>
+
+
+
+
+
+            <button type="submit">Export CSV</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
